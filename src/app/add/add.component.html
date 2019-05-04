@@ -1,0 +1,19 @@
+<form #addForm="ngForm" (ngSubmit)="add(addForm.value)">
+  Trainee ID: <input type="number" name="traineeId" ngModel><br><br>
+  Trainee name: <input type="text" name="traineeName" ngModel><br><br>
+  Trainee Location :
+Chennai<input type="radio" name="traineeLocation" value="Chennai" ngModel>
+  Banglore<input type="radio" name="traineeLocation" value="Banglore" ngModel>
+ Pune <input type="radio" name="traineeLocation" value="Pune" ngModel>
+Mumbai   <input type="radio" name="traineeLocation" value="Mumbai" ngModel>
+  <br>
+  Trainee Domain<select name="traineeDomain">
+      <option value="select" selected>Please select</option>
+      <option value="JEE">JEE</option>
+      <option value=".Net">.Net</option>
+      <option value="MainFrame">MainFrame</option>
+  </select><br><br>
+  <button type="submit" class="btn btn-success">ADD Trainee</button>
+</form>
+
+<div >
